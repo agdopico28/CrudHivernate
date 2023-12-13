@@ -1,19 +1,17 @@
 package com.example.crudhivernate;
 
 import com.example.crudhivernate.Models.Dao.INadadorDAO;
-import com.example.ejemplocrudhibernate.Models.dao.INadadorDAO;
-import com.example.ejemplocrudhibernate.Models.dao.ImplementNadadorDAO;
-import com.example.ejemplocrudhibernate.Models.entity.Nadador;
+import com.example.crudhivernate.Models.Entity.Nadador;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class EjemploCrudHibernateApplication {
+public class CrudHivernateApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EjemploCrudHibernateApplication.class, args);
+		SpringApplication.run(CrudHivernateApplication.class, args);
 	}
 
 	@Bean
@@ -31,7 +29,7 @@ public class EjemploCrudHibernateApplication {
 
 		nadador.setNombre("Juan");
 		nadador.setEdad(23);
-		nadador.setEmail("juan@juam");
+		nadador.setEmail(2);
 
 		System.out.println("Grabando nadador....");
 		nadadorDAO.save(nadador);
